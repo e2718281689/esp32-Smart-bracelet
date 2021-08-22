@@ -1,0 +1,429 @@
+Added Component: Designator=1(HDR2.54-LI-18P)
+Add component (AddParameter): Name = "BOM名称"; Value = "18P接插件"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家 ID：黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=A1(ANT-Rainsun-AN5120)
+Added Component: Designator=C1(CAP_0402)
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C2(CAP_0402)
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C3(CAP_0402)
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C4(CAP_0402)
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C5(CAP_0402)
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C6(CAP_0402)
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C7(CAP_0402)
+Add component (AddParameter): Name = "BOM名称"; Value = "无极性贴片电容"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家ID：黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库，请立即申请退款"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=C8(CAP_0402)
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C12(CAP_0402)
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C13(CAP_0402)
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C16(CAP_0402)
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=D1(LED_0402_RED)
+Add component (AddParameter): Name = "Type"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "color?"; VariantName = "[No Variations]"
+Added Component: Designator=D2(LED_0402_RED)
+Add component (AddParameter): Name = "Type"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "color?"; VariantName = "[No Variations]"
+Added Component: Designator=JP1(HDR2.54-LI-18P)
+Add component (AddParameter): Name = "BOM名称"; Value = "18P接插件"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家 ID：黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=K1(ButtonTACT_3.5*3.55_90)
+Add component (AddParameter): Name = "type"; Value = "TACT 4P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "value"; Value = "3.4x3.5"; VariantName = "[No Variations]"
+Added Component: Designator=K2(ButtonTACT_3.5*3.55_90)
+Add component (AddParameter): Name = "type"; Value = "TACT 4P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "value"; Value = "3.4x3.5"; VariantName = "[No Variations]"
+Added Component: Designator=K3(ButtonTACT_3.5*3.55_90)
+Add component (AddParameter): Name = "type"; Value = "TACT 4P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "value"; Value = "3.4x3.5"; VariantName = "[No Variations]"
+Added Component: Designator=K4(ButtonTACT_3.5*3.55_90)
+Add component (AddParameter): Name = "type"; Value = "TACT 4P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "value"; Value = "3.4x3.5"; VariantName = "[No Variations]"
+Added Component: Designator=K5(ButtonTACT_3.5*3.55_90)
+Add component (AddParameter): Name = "type"; Value = "TACT 4P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "value"; Value = "3.4x3.5"; VariantName = "[No Variations]"
+Added Component: Designator=P1(金手指4)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P2(金手指4)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R1(R0402_L)
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=R2(R0402_L)
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=R3(R0402_L)
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=R4(R0402_L)
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=R5(R0402_L)
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=R6(R0402_L)
+Add component (AddParameter): Name = "BOM名称"; Value = "贴片电阻"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家ID：黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库，请立即申请退款"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=R7(R0402_L)
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=R8(R0402_L)
+Add component (AddParameter): Name = "BOM名称"; Value = "贴片电阻"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家ID：黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库，请立即申请退款"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=R9(R0402_L)
+Add component (AddParameter): Name = "BOM名称"; Value = "贴片电阻"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家ID：黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库，请立即申请退款"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=R10(R0402_L)
+Add component (AddParameter): Name = "BOM名称"; Value = "贴片电阻"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家ID：黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库，请立即申请退款"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=R11(R0402_L)
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=R12(R0402_L)
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=R15(R0402_L)
+Added Component: Designator=R17(R0402_L)
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=R19(R0402_L)
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=R20(R0402_L)
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=SW_IMU1(SW1.27 SMD-2P)
+Add component (AddParameter): Name = "BOM名称"; Value = "2路编码开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=SW_IMU2(SW1.27 SMD-2P)
+Add component (AddParameter): Name = "BOM名称"; Value = "2路编码开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=SW_TF1(SW1.27 SMD-4P)
+Add component (AddParameter): Name = "BOM名称"; Value = "4路编码开关"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=T1(TFT144PF254)
+Added Component: Designator=TF1(Micro SD)
+Add component (AddParameter): Name = "BOM名称"; Value = "TF卡座"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费技术支持"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=U1(QFN-28)
+Add component (AddParameter): Name = "MFG #1"; Value = "SILICON LABS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART DESC"; Value = "SINGLE-CHIP USB TO UART BRIDGE, QFN28, RoHS."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NUMBER"; Value = "CP2102"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Added Component: Designator=U2(SOT23-5)
+Added Component: Designator=U3(QFN-48_7X7)
+Added Component: Designator=U4(QFN-24)
+Added Component: Designator=USB1(Type-C-TOP)
+Added Component: Designator=VT1(SMT_TRIODE_NPN)
+Added Component: Designator=VT2(SMT_TRIODE_NPN)
+Added Pin To Net: NetName=3V3A Pin=A1-1
+Added Pin To Net: NetName=3V3A Pin=C4-2
+Added Pin To Net: NetName=3V3A Pin=C5-2
+Added Pin To Net: NetName=3V3A Pin=P1-1
+Added Pin To Net: NetName=3V3A Pin=R3-1
+Added Pin To Net: NetName=3V3A Pin=R7-2
+Added Pin To Net: NetName=3V3A Pin=U3-1
+Added Pin To Net: NetName=3V3A Pin=U3-2
+Added Pin To Net: NetName=3V3A Pin=U3-3
+Added Pin To Net: NetName=3V3A Pin=U3-4
+Added Pin To Net: NetName=3V3A Pin=U3-19
+Added Pin To Net: NetName=3V3A Pin=U3-37
+Added Pin To Net: NetName=3V3A Pin=U3-43
+Added Pin To Net: NetName=3V3A Pin=U3-47
+Added Net: Name=3V3A
+Added Pin To Net: NetName=3V3 Pin=C7-2
+Added Pin To Net: NetName=3V3 Pin=R6-2
+Added Pin To Net: NetName=3V3 Pin=R8-2
+Added Pin To Net: NetName=3V3 Pin=R9-2
+Added Pin To Net: NetName=3V3 Pin=R10-2
+Added Pin To Net: NetName=3V3 Pin=TF1-4
+Added Net: Name=3V3
+Added Pin To Net: NetName=CP_Rx Pin=U1-25
+Added Pin To Net: NetName=CP_Rx Pin=U3-41
+Added Net: Name=CP_Rx
+Added Pin To Net: NetName=CP_Tx Pin=R4-2
+Added Pin To Net: NetName=CP_Tx Pin=U3-40
+Added Net: Name=CP_Tx
+Added Pin To Net: NetName=DTR Pin=R2-2
+Added Pin To Net: NetName=DTR Pin=U1-28
+Added Pin To Net: NetName=DTR Pin=VT2-2
+Added Net: Name=DTR
+Added Pin To Net: NetName=EN Pin=C6-2
+Added Pin To Net: NetName=EN Pin=R7-1
+Added Pin To Net: NetName=EN Pin=R20-2
+Added Pin To Net: NetName=EN Pin=U3-9
+Added Pin To Net: NetName=EN Pin=VT1-3
+Added Net: Name=EN
+Added Pin To Net: NetName=GND Pin=1-15
+Added Pin To Net: NetName=GND Pin=1-16
+Added Pin To Net: NetName=GND Pin=1-17
+Added Pin To Net: NetName=GND Pin=1-18
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C12-2
+Added Pin To Net: NetName=GND Pin=C13-1
+Added Pin To Net: NetName=GND Pin=C16-1
+Added Pin To Net: NetName=GND Pin=D2-2
+Added Pin To Net: NetName=GND Pin=K1-1
+Added Pin To Net: NetName=GND Pin=K1-3
+Added Pin To Net: NetName=GND Pin=K2-1
+Added Pin To Net: NetName=GND Pin=K2-3
+Added Pin To Net: NetName=GND Pin=K3-1
+Added Pin To Net: NetName=GND Pin=K3-3
+Added Pin To Net: NetName=GND Pin=K4-1
+Added Pin To Net: NetName=GND Pin=K4-3
+Added Pin To Net: NetName=GND Pin=K5-1
+Added Pin To Net: NetName=GND Pin=K5-3
+Added Pin To Net: NetName=GND Pin=P1-4
+Added Pin To Net: NetName=GND Pin=R11-2
+Added Pin To Net: NetName=GND Pin=R12-2
+Added Pin To Net: NetName=GND Pin=T1-2
+Added Pin To Net: NetName=GND Pin=T1-3
+Added Pin To Net: NetName=GND Pin=T1-5
+Added Pin To Net: NetName=GND Pin=T1-13
+Added Pin To Net: NetName=GND Pin=TF1-6
+Added Pin To Net: NetName=GND Pin=TF1-10
+Added Pin To Net: NetName=GND Pin=TF1-10
+Added Pin To Net: NetName=GND Pin=TF1-10
+Added Pin To Net: NetName=GND Pin=TF1-10
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-29
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=GND Pin=U4-1
+Added Pin To Net: NetName=GND Pin=U4-9
+Added Pin To Net: NetName=GND Pin=U4-11
+Added Pin To Net: NetName=GND Pin=U4-18
+Added Pin To Net: NetName=GND Pin=USB1-1
+Added Pin To Net: NetName=GND Pin=USB1-2
+Added Pin To Net: NetName=GND Pin=USB1-3
+Added Pin To Net: NetName=GND Pin=USB1-4
+Added Pin To Net: NetName=GND Pin=USB1-A1
+Added Pin To Net: NetName=GND Pin=USB1-A12
+Added Pin To Net: NetName=GND Pin=USB1-B1
+Added Pin To Net: NetName=GND Pin=USB1-B12
+Added Net: Name=GND
+Added Pin To Net: NetName=GPIO0 Pin=1-10
+Added Pin To Net: NetName=GPIO0 Pin=K2-2
+Added Pin To Net: NetName=GPIO0 Pin=K2-4
+Added Pin To Net: NetName=GPIO0 Pin=U3-23
+Added Pin To Net: NetName=GPIO0 Pin=VT2-3
+Added Net: Name=GPIO0
+Added Pin To Net: NetName=GPIO2 Pin=1-9
+Added Pin To Net: NetName=GPIO2 Pin=K1-2
+Added Pin To Net: NetName=GPIO2 Pin=K1-4
+Added Pin To Net: NetName=GPIO2 Pin=U3-22
+Added Net: Name=GPIO2
+Added Pin To Net: NetName=GPIO4 Pin=JP1-16
+Added Pin To Net: NetName=GPIO4 Pin=K4-2
+Added Pin To Net: NetName=GPIO4 Pin=K4-4
+Added Pin To Net: NetName=GPIO4 Pin=U3-24
+Added Net: Name=GPIO4
+Added Pin To Net: NetName=GPIO5 Pin=1-8
+Added Pin To Net: NetName=GPIO5 Pin=U3-34
+Added Net: Name=GPIO5
+Added Pin To Net: NetName=GPIO9 Pin=JP1-9
+Added Pin To Net: NetName=GPIO9 Pin=U3-28
+Added Net: Name=GPIO9
+Added Pin To Net: NetName=GPIO10 Pin=JP1-8
+Added Pin To Net: NetName=GPIO10 Pin=U3-29
+Added Net: Name=GPIO10
+Added Pin To Net: NetName=GPIO12 Pin=1-7
+Added Pin To Net: NetName=GPIO12 Pin=SW_IMU1-1
+Added Pin To Net: NetName=GPIO12 Pin=SW_IMU1-4
+Added Pin To Net: NetName=GPIO12 Pin=T1-8
+Added Pin To Net: NetName=GPIO12 Pin=U3-18
+Added Net: Name=GPIO12
+Added Pin To Net: NetName=GPIO13 Pin=JP1-15
+Added Pin To Net: NetName=GPIO13 Pin=K5-2
+Added Pin To Net: NetName=GPIO13 Pin=K5-4
+Added Pin To Net: NetName=GPIO13 Pin=SW_TF1-7
+Added Pin To Net: NetName=GPIO13 Pin=U3-20
+Added Net: Name=GPIO13
+Added Pin To Net: NetName=GPIO14 Pin=JP1-14
+Added Pin To Net: NetName=GPIO14 Pin=SW_IMU1-2
+Added Pin To Net: NetName=GPIO14 Pin=SW_IMU1-3
+Added Pin To Net: NetName=GPIO14 Pin=SW_TF1-6
+Added Pin To Net: NetName=GPIO14 Pin=T1-9
+Added Pin To Net: NetName=GPIO14 Pin=U3-17
+Added Net: Name=GPIO14
+Added Pin To Net: NetName=GPIO15 Pin=JP1-13
+Added Pin To Net: NetName=GPIO15 Pin=SW_TF1-8
+Added Pin To Net: NetName=GPIO15 Pin=T1-12
+Added Pin To Net: NetName=GPIO15 Pin=U3-21
+Added Net: Name=GPIO15
+Added Pin To Net: NetName=GPIO18 Pin=JP1-7
+Added Pin To Net: NetName=GPIO18 Pin=U3-35
+Added Net: Name=GPIO18
+Added Pin To Net: NetName=GPIO19 Pin=JP1-6
+Added Pin To Net: NetName=GPIO19 Pin=P2-3
+Added Pin To Net: NetName=GPIO19 Pin=U3-38
+Added Net: Name=GPIO19
+Added Pin To Net: NetName=GPIO21 Pin=JP1-5
+Added Pin To Net: NetName=GPIO21 Pin=P1-2
+Added Pin To Net: NetName=GPIO21 Pin=SW_IMU2-4
+Added Pin To Net: NetName=GPIO21 Pin=U3-42
+Added Net: Name=GPIO21
+Added Pin To Net: NetName=GPIO22 Pin=JP1-4
+Added Pin To Net: NetName=GPIO22 Pin=P1-3
+Added Pin To Net: NetName=GPIO22 Pin=SW_IMU2-3
+Added Pin To Net: NetName=GPIO22 Pin=U3-39
+Added Net: Name=GPIO22
+Added Pin To Net: NetName=GPIO23 Pin=JP1-3
+Added Pin To Net: NetName=GPIO23 Pin=U3-36
+Added Net: Name=GPIO23
+Added Pin To Net: NetName=GPIO25 Pin=JP1-2
+Added Pin To Net: NetName=GPIO25 Pin=T1-6
+Added Pin To Net: NetName=GPIO25 Pin=U3-14
+Added Net: Name=GPIO25
+Added Pin To Net: NetName=GPIO26 Pin=JP1-1
+Added Pin To Net: NetName=GPIO26 Pin=SW_TF1-5
+Added Pin To Net: NetName=GPIO26 Pin=T1-7
+Added Pin To Net: NetName=GPIO26 Pin=U3-15
+Added Net: Name=GPIO26
+Added Pin To Net: NetName=GPIO27 Pin=D1-2
+Added Pin To Net: NetName=GPIO27 Pin=JP1-12
+Added Pin To Net: NetName=GPIO27 Pin=R15-1
+Added Pin To Net: NetName=GPIO27 Pin=U3-16
+Added Net: Name=GPIO27
+Added Pin To Net: NetName=GPIO32 Pin=JP1-11
+Added Pin To Net: NetName=GPIO32 Pin=U3-12
+Added Net: Name=GPIO32
+Added Pin To Net: NetName=GPIO33 Pin=JP1-10
+Added Pin To Net: NetName=GPIO33 Pin=U3-13
+Added Net: Name=GPIO33
+Added Pin To Net: NetName=GPIO34 Pin=1-6
+Added Pin To Net: NetName=GPIO34 Pin=U3-10
+Added Net: Name=GPIO34
+Added Pin To Net: NetName=GPIO35 Pin=1-5
+Added Pin To Net: NetName=GPIO35 Pin=U3-11
+Added Net: Name=GPIO35
+Added Pin To Net: NetName=GPIO37 Pin=1-2
+Added Pin To Net: NetName=GPIO37 Pin=U3-6
+Added Net: Name=GPIO37
+Added Pin To Net: NetName=GPIO38 Pin=1-3
+Added Pin To Net: NetName=GPIO38 Pin=U3-7
+Added Net: Name=GPIO38
+Added Pin To Net: NetName=LEDA Pin=R15-2
+Added Pin To Net: NetName=LEDA Pin=T1-4
+Added Net: Name=LEDA
+Added Pin To Net: NetName=MPU_SCL Pin=SW_IMU2-2
+Added Pin To Net: NetName=MPU_SCL Pin=U4-23
+Added Net: Name=MPU_SCL
+Added Pin To Net: NetName=MPU_SDA Pin=SW_IMU2-1
+Added Pin To Net: NetName=MPU_SDA Pin=U4-24
+Added Net: Name=MPU_SDA
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetC3_2 Pin=U2-4
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetC12_1 Pin=C12-1
+Added Pin To Net: NetName=NetC12_1 Pin=U4-10
+Added Net: Name=NetC12_1
+Added Pin To Net: NetName=NetC13_2 Pin=C13-2
+Added Pin To Net: NetName=NetC13_2 Pin=U4-20
+Added Net: Name=NetC13_2
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=R17-2
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=R19-2
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetK3_2 Pin=K3-2
+Added Pin To Net: NetName=NetK3_2 Pin=K3-4
+Added Pin To Net: NetName=NetK3_2 Pin=R20-1
+Added Net: Name=NetK3_2
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=U1-9
+Added Net: Name=NetR1_1
+Added Pin To Net: NetName=NetR2_1 Pin=R2-1
+Added Pin To Net: NetName=NetR2_1 Pin=VT1-1
+Added Net: Name=NetR2_1
+Added Pin To Net: NetName=NetR4_1 Pin=R4-1
+Added Pin To Net: NetName=NetR4_1 Pin=U1-26
+Added Net: Name=NetR4_1
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=NetR5_1 Pin=VT2-1
+Added Net: Name=NetR5_1
+Added Pin To Net: NetName=NetR11_1 Pin=R11-1
+Added Pin To Net: NetName=NetR11_1 Pin=USB1-A5
+Added Net: Name=NetR11_1
+Added Pin To Net: NetName=NetR12_1 Pin=R12-1
+Added Pin To Net: NetName=NetR12_1 Pin=USB1-B5
+Added Net: Name=NetR12_1
+Added Pin To Net: NetName=RTS Pin=R5-2
+Added Pin To Net: NetName=RTS Pin=U1-24
+Added Pin To Net: NetName=RTS Pin=VT1-2
+Added Net: Name=RTS
+Added Pin To Net: NetName=SD_CLK Pin=R9-1
+Added Pin To Net: NetName=SD_CLK Pin=SW_TF1-3
+Added Pin To Net: NetName=SD_CLK Pin=TF1-5
+Added Net: Name=SD_CLK
+Added Pin To Net: NetName=SD_CS Pin=R10-1
+Added Pin To Net: NetName=SD_CS Pin=SW_TF1-1
+Added Pin To Net: NetName=SD_CS Pin=TF1-2
+Added Net: Name=SD_CS
+Added Pin To Net: NetName=SD_MISO Pin=R6-1
+Added Pin To Net: NetName=SD_MISO Pin=SW_TF1-4
+Added Pin To Net: NetName=SD_MISO Pin=TF1-7
+Added Net: Name=SD_MISO
+Added Pin To Net: NetName=SD_MOSI Pin=R8-1
+Added Pin To Net: NetName=SD_MOSI Pin=SW_TF1-2
+Added Pin To Net: NetName=SD_MOSI Pin=TF1-3
+Added Net: Name=SD_MOSI
+Added Pin To Net: NetName=SENSOR_VN Pin=1-4
+Added Pin To Net: NetName=SENSOR_VN Pin=U3-8
+Added Net: Name=SENSOR_VN
+Added Pin To Net: NetName=SENSOR_VP Pin=1-1
+Added Pin To Net: NetName=SENSOR_VP Pin=U3-5
+Added Net: Name=SENSOR_VP
+Added Pin To Net: NetName=USB-PWR-DM Pin=U1-5
+Added Pin To Net: NetName=USB-PWR-DM Pin=USB1-A7
+Added Net: Name=USB-PWR-DM
+Added Pin To Net: NetName=USB-PWR-DP Pin=U1-4
+Added Pin To Net: NetName=USB-PWR-DP Pin=USB1-A6
+Added Pin To Net: NetName=USB-PWR-DP Pin=USB1-B6
+Added Pin To Net: NetName=USB-PWR-DP Pin=USB1-B7
+Added Net: Name=USB-PWR-DP
+Added Pin To Net: NetName=VBUS Pin=1-13
+Added Pin To Net: NetName=VBUS Pin=1-14
+Added Pin To Net: NetName=VBUS Pin=R1-2
+Added Pin To Net: NetName=VBUS Pin=U1-7
+Added Pin To Net: NetName=VBUS Pin=U1-8
+Added Pin To Net: NetName=VBUS Pin=U2-1
+Added Pin To Net: NetName=VBUS Pin=U2-3
+Added Pin To Net: NetName=VBUS Pin=USB1-A4
+Added Pin To Net: NetName=VBUS Pin=USB1-A9
+Added Pin To Net: NetName=VBUS Pin=USB1-B4
+Added Pin To Net: NetName=VBUS Pin=USB1-B9
+Added Net: Name=VBUS
+Added Pin To Net: NetName=VCC_3V3 Pin=1-11
+Added Pin To Net: NetName=VCC_3V3 Pin=1-12
+Added Pin To Net: NetName=VCC_3V3 Pin=C1-2
+Added Pin To Net: NetName=VCC_3V3 Pin=C2-2
+Added Pin To Net: NetName=VCC_3V3 Pin=C8-1
+Added Pin To Net: NetName=VCC_3V3 Pin=C16-2
+Added Pin To Net: NetName=VCC_3V3 Pin=R3-2
+Added Pin To Net: NetName=VCC_3V3 Pin=R17-1
+Added Pin To Net: NetName=VCC_3V3 Pin=R19-1
+Added Pin To Net: NetName=VCC_3V3 Pin=T1-10
+Added Pin To Net: NetName=VCC_3V3 Pin=T1-11
+Added Pin To Net: NetName=VCC_3V3 Pin=U2-5
+Added Pin To Net: NetName=VCC_3V3 Pin=U4-8
+Added Pin To Net: NetName=VCC_3V3 Pin=U4-13
+Added Net: Name=VCC_3V3
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1

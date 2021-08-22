@@ -1,0 +1,6 @@
+DRC Rules Export File for PCB: E:\Altium\PCB_Project\XXX.PcbDoc
+RuleKind=Width|RuleName=PWR|Scope=Board|Minimum=10.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=2.58
+RuleKind=Width|RuleName=ALL|Scope=Board|Minimum=6.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=6.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

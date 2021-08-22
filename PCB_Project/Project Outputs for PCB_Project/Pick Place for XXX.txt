@@ -1,0 +1,65 @@
+Altium Designer Pick and Place Locations
+E:\Altium\PCB_Project\Project Outputs for PCB_Project\Pick Place for XXX.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       31/07/21
+Time:       14:23
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator Comment      Layer       Footprint                                   Center-X(mil) Center-Y(mil) Rotation 
+1          HDR-1X18     TopLayer    HDR2.54-LI-18P                              1570.000      2550.000      270      
+R15        10R          TopLayer    R0402_L                                     2799.998      2060.001      90       
+VT2        S8050        TopLayer    SMT_TRIODE_NPN                              2055.000      1855.000      360      
+VT1        S8050        TopLayer    SMT_TRIODE_NPN                              1900.000      1860.000      180      
+USB1       Type-C       TopLayer    Type-C-TOP                                  1970.000      1460.000      270      
+U4         MPU6050      TopLayer    QFN-24                                      2445.000      2405.000      360      
+U3         ESP32_SIP    TopLayer    QFN-48_7X7                                  2447.382      3016.102      180      
+U2         "LP2992 3V3" TopLayer    SOT23-5                                     2648.500      1807.158      0        
+U1         CP2102       TopLayer    QFN-28                                      1970.000      2170.000      0        
+TF1        TF_Card      BottomLayer Micro_SD                                    2190.944      2995.808      360      
+T1         TFT177PF254  TopLayer    TFT144PF254                                 2420.237      2110.000      360      
+R20        1K           TopLayer    R0402_L                                     2455.000      1621.733      90       
+R19        1K           TopLayer    R0402_L                                     1680.002      1454.999      270      
+R17        1K           TopLayer    R0402_L                                     2940.000      1431.733      270      
+R12        5.1K         TopLayer    R0402_L                                     2058.267      1650.000      360      
+R11        5.1K         TopLayer    R0402_L                                     1906.733      1650.000      180      
+R10        10K          BottomLayer R0402_L                                     2335.000      2676.733      90       
+R9         10K          BottomLayer R0402_L                                     2175.000      2676.733      90       
+R8         10K          BottomLayer R0402_L                                     2260.000      2676.733      90       
+R7         10K          TopLayer    R0402_L                                     2671.733      3050.000      360      
+R6         10K          BottomLayer R0402_L                                     2100.000      2676.733      90       
+R5         12K          TopLayer    R0402_L                                     2013.267      2325.000      180      
+R4         200R         TopLayer    R0402_L                                     1931.733      2325.000      0        
+R3         0R           TopLayer    R0402_L                                     2671.733      2970.000      360      
+R2         12K          TopLayer    R0402_L                                     2008.267      1995.000      180      
+R1         10K          TopLayer    R0402_L                                     1894.999      1994.998      180      
+P2         MHDR1X4      BottomLayer 金手指4                                        2375.000      2540.000      180      
+P1         MHDR1X4      BottomLayer 金手指4                                        2375.000      1970.000      180      
+K5         "TACT 4P"    TopLayer    SW-SMD_4P-L4.2-W3.3-P2.15-LS5.1_-_duplicate 2749.999      1460.002      90       
+K4         "TACT 4P"    TopLayer    ButtonTACT_3.5*3.55_90                      2967.000      2970.000      270      
+K3         "TACT 4P"    TopLayer    SW-SMD_4P-L4.2-W3.3-P2.15-LS5.1_-_duplicate 2409.999      1455.002      90       
+K2         "TACT 4P"    TopLayer    ButtonTACT_3.5*3.55_90                      2967.000      2425.000      270      
+K1         "TACT 4P"    TopLayer    ButtonTACT_3.5*3.55_90                      2967.000      1835.000      270      
+JP1        HDR-1X18     TopLayer    HDR2.54-LI-18P                              1680.000      2550.000      270      
+J6         跳线           BottomLayer 0402-0R                                     2855.000      1988.000      90       
+J5         跳线           BottomLayer 0402-0R                                     2785.000      1990.000      90       
+J2         跳线           BottomLayer 0402-0R                                     2790.000      2173.000      270      
+J1         跳线           BottomLayer 0402-0R                                     2865.000      2172.000      270      
+D2         color?       TopLayer    LED_0402_RED                                1625.000      1455.000      90       
+D1         color?       TopLayer    LED_0402_RED                                2885.000      1435.000      90       
+C16        0.1uF        TopLayer    CAP_0402                                    2665.000      2445.000      270      
+C13        2.2nF        TopLayer    CAP_0402                                    2612.678      2455.158      90       
+C12        0.1uF        TopLayer    CAP_0402                                    2607.678      2365.158      90       
+C8         10nF         TopLayer    CAP_0402                                    2667.678      2365.158      90       
+C7         100nf        BottomLayer CAP_0402                                    2030.000      2675.000      90       
+C6         0.1uF        TopLayer    CAP_0402                                    2765.000      2945.000      90       
+C5         0.1uF        TopLayer    CAP_0402                                    2775.000      3040.000      90       
+C4         10nF         TopLayer    CAP_0402                                    2675.000      2905.000      180      
+C3         10nF         TopLayer    CAP_0402                                    2790.000      1745.000      180      
+C2         10uF         TopLayer    CAP_0402                                    2790.000      1795.000      180      
+C1         0.1uF        TopLayer    CAP_0402                                    2785.000      1850.000      180      
+A1         RAINSUN      TopLayer    ANT-Rainsun-AN5120                          2344.547      3300.000      180      

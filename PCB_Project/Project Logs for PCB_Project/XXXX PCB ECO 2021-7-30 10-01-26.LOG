@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GPIO12 Pin=SW_IMU1-1
+Removed Pin From Net: NetName=GPIO14 Pin=SW_IMU1-2
+Removed Pin From Net: NetName=GPIO14 Pin=SW_IMU1-3
+Removed Pin From Net: NetName=GPIO12 Pin=SW_IMU1-4
+Removed Member From Class: ClassName=Sheet1 Member=SW_IMU1

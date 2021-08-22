@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GPIO21 Pin=J3-2
+Removed Pin From Net: NetName=GPIO22 Pin=J4-2
+Removed Member From Class: ClassName=Sheet1 Member=J3
+Removed Member From Class: ClassName=Sheet1 Member=J4
+Added Pin To Net: NetName=GPIO22 Pin=U4-23
+Added Pin To Net: NetName=GPIO21 Pin=U4-24

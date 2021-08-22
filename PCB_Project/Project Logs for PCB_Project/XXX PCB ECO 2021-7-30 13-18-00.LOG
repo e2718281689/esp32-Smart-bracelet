@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GPIO26 Pin=T1-7
+Change Component Footprint: Designator=K3 Old Footprint=SW-SMD_4P-L4.2-W3.3-P2.15-LS5.1 - duplicate New Footprint=ButtonTACT_3.5*3.55_90
+Change Component Footprint: Designator=K5 Old Footprint=SW-SMD_4P-L4.2-W3.3-P2.15-LS5.1 - duplicate New Footprint=ButtonTACT_3.5*3.55_90
+Change Component Footprint: Designator=T1 Old Footprint=TFT144PF254 - duplicate New Footprint=TFT144PF254
+Change Component Footprint: Designator=P2 Old Footprint=金手指4 - duplicate New Footprint=金手指4
+Added Pin To Net: NetName=GPIO33 Pin=T1-7
+Added Room: Name=Sheet1

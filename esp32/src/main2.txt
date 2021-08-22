@@ -1,0 +1,497 @@
+
+// #include <lvgl.h>
+// #include <TFT_eSPI.h>
+
+// TFT_eSPI tft = TFT_eSPI(130,130);
+// static lv_disp_buf_t disp_buf;
+// static lv_color_t buf[LV_HOR_RES_MAX * 10];
+
+// static lv_obj_t* sum;
+//   static lv_obj_t* sum1;
+//   static lv_obj_t* sum2;
+//   static lv_obj_t* sum3;
+  
+//   static lv_obj_t* background;
+//   static lv_obj_t* tiime;
+//   static lv_style_t time_style;
+
+// static void lflf(lv_task_t *);
+
+// void erer();
+// void lflf();
+// #if USE_LV_LOG != 0
+// /* Serial debugging */
+// void my_print(lv_log_level_t level, const char * file, uint32_t line, const char * dsc)
+// {
+
+//     Serial.printf("%s@%d->%s\r\n", file, line, dsc);
+//     Serial.flush();
+// }
+// #endif
+
+// /* Display flushing */
+// void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p)
+// {
+//     uint32_t w = (area->x2 - area->x1 + 1);
+//     uint32_t h = (area->y2 - area->y1 + 1);
+
+//     tft.startWrite();
+//     tft.setAddrWindow(area->x1, area->y1, w, h);
+//     tft.pushColors(&color_p->full, w * h, true);
+//     tft.endWrite();
+
+//     lv_disp_flush_ready(disp);
+// }
+
+// /* Reading input device (simulated encoder here) */
+// bool read_encoder(lv_indev_drv_t * indev, lv_indev_data_t * data)
+// {
+//     static int32_t last_diff = 0;
+//     int32_t diff = 0; /* Dummy - no movement */
+//     int btn_state = LV_INDEV_STATE_REL; /* Dummy - no press */
+
+//     data->enc_diff = diff - last_diff;;
+//     data->state = btn_state;
+
+//     last_diff = diff;
+
+//     return false;
+// }
+
+// void setup()
+// {
+
+//     Serial.begin(115200); /* prepare for possible serial debug */
+
+//     lv_init();
+
+// #if USE_LV_LOG != 0
+//     lv_log_register_print_cb(my_print); /* register print function for debugging */
+// #endif
+
+//     tft.begin(); /* TFT init */
+//     tft.setRotation(1); /* Landscape orientation */
+
+//     lv_disp_buf_init(&disp_buf, buf, NULL, LV_HOR_RES_MAX * 10);
+
+//     /*Initialize the display*/
+//     lv_disp_drv_t disp_drv;
+//     lv_disp_drv_init(&disp_drv);
+//     disp_drv.hor_res = 130;
+//     disp_drv.ver_res = 130;
+//     disp_drv.flush_cb = my_disp_flush;
+//     disp_drv.buffer = &disp_buf;
+//     lv_disp_drv_register(&disp_drv);
+
+//     /*Initialize the (dummy) input device driver*/
+//     //lv_style_t *fdgdfg;
+//     lv_indev_drv_t indev_drv;
+//     lv_indev_drv_init(&indev_drv);
+//     indev_drv.type = LV_INDEV_TYPE_ENCODER;
+//     indev_drv.read_cb = read_encoder;
+//    // lv_indev_drv_register(&indev_drv);
+//     erer();
+//     //lflf(NULL);
+// }
+
+// static void lflf(lv_task_t *param)
+// {
+//   (void) param; 
+//   LV_IMG_DECLARE(ground); 
+//   LV_IMG_DECLARE(i0);
+//   LV_IMG_DECLARE(i1);
+//   LV_IMG_DECLARE(i2);
+//   LV_IMG_DECLARE(i3);
+// //   LV_IMG_DECLARE(i4);
+// //   LV_IMG_DECLARE(i5);
+// //   LV_IMG_DECLARE(i6);
+// //   LV_IMG_DECLARE(i7);
+// //   LV_IMG_DECLARE(i8);
+// //   LV_IMG_DECLARE(i9);
+
+//   //lv_img_dsc_t  sumf[10]={i0,i1,i2,i3,i4,i5,i6,i7,i8,i9};
+
+//   lv_style_init(&time_style);
+//   lv_style_set_bg_opa(&time_style, LV_STATE_DEFAULT, LV_OPA_20);//本体不透明度
+//   lv_style_set_border_width(&time_style, LV_STATE_DEFAULT, 2);//边框
+//   lv_style_set_border_color(&time_style, LV_STATE_DEFAULT, LV_COLOR_BLACK);//边框颜色    
+//   //lv_style_set_clip_corner(&time_style, 0, true);
+//   lv_style_set_radius(&time_style, 0, 10);//圆角
+//   lv_style_set_bg_color(&time_style, LV_STATE_DEFAULT, LV_COLOR_BLACK);//本体颜色
+//   lv_style_set_border_color(&time_style, LV_STATE_DEFAULT, LV_COLOR_BLACK);//边框颜色
+//   background = lv_img_create(lv_scr_act(), NULL);
+//   lv_img_set_src(background, &ground);
+//   lv_obj_set_size(background,130,130);
+//   tiime=lv_obj_create(background,NULL);
+//   lv_obj_set_click(tiime,false);
+//   lv_obj_set_size(tiime,100,100);
+//   lv_obj_align(tiime,background,LV_ALIGN_CENTER,0,0);
+//   lv_obj_set_style_local_value_color(tiime,LV_ARC_PART_BG, LV_STATE_DEFAULT,LV_COLOR_RED);
+//   //lv_obj_set_style_local_value_str(time, LV_ARC_PART_BG, LV_STATE_DEFAULT, "80:80");
+//   sum= lv_img_create(tiime, NULL);
+//   sum1= lv_img_create(tiime, NULL);
+//   sum2= lv_img_create(tiime, NULL);
+//   sum3= lv_img_create(tiime, NULL);
+//   lv_img_set_src(sum, &i0);
+//   lv_img_set_src(sum1, &i1);
+//   lv_img_set_src(sum2, &i2);
+//   lv_img_set_src(sum3, &i3);
+//   lv_obj_add_style(tiime,LV_OBJ_PART_MAIN,&time_style);
+//   lv_obj_align(sum,tiime,LV_ALIGN_CENTER,15,-20);
+//   lv_obj_align(sum1,tiime,LV_ALIGN_CENTER,-15,-20);
+//   lv_obj_align(sum2,tiime,LV_ALIGN_CENTER,15,20);
+//   lv_obj_align(sum3,tiime,LV_ALIGN_CENTER,-15,20);
+// }
+// void erer()
+// {
+
+// LV_IMG_DECLARE(background_img);
+// //LV_IMG_DECLARE(ground);  
+//   LV_IMG_DECLARE(weather);
+//  LV_IMG_DECLARE(i6);
+//   lv_obj_t *app_scr;
+
+
+
+//     lv_obj_t *pre_app_image;
+//     lv_obj_t *now_app_image;
+
+
+
+//     app_scr = lv_obj_create(lv_scr_act(), NULL);
+//     lv_obj_set_size(app_scr,130,130);
+//     lv_obj_align(app_scr, NULL, LV_ALIGN_CENTER, 2, 1);
+//     background = lv_img_create(app_scr, NULL);
+//     lv_img_set_src(background, &background_img);
+//     lv_obj_set_size(background,130,130);
+//     lv_obj_align(background, NULL, LV_ALIGN_CENTER, 0, 0);
+
+
+//     now_app_image = lv_img_create(app_scr, NULL);
+//     lv_img_set_src(now_app_image, &weather);
+//     lv_obj_align(now_app_image, background, LV_ALIGN_CENTER, 0, 0);
+
+//     pre_app_image = lv_img_create(app_scr, NULL);
+//     lv_img_set_src(pre_app_image, &i6);
+//     lv_obj_align(pre_app_image, background, LV_ALIGN_CENTER, 0, 0);
+
+//     int now_start_x=65+130;
+//     int now_end_x=65-64;
+//     int old_start_x = 65;
+//     int old_end_x = -65;
+    
+//     lv_anim_path_t path;
+//     lv_anim_path_init(&path);
+//     lv_anim_path_set_cb(&path, lv_anim_path_ease_out);
+
+//     lv_anim_t now_app;
+//     lv_anim_init(&now_app);
+//     lv_anim_set_exec_cb(&now_app, (lv_anim_exec_xcb_t)lv_obj_set_x);
+//     lv_anim_set_var(&now_app, now_app_image);
+//     lv_anim_set_values(&now_app, now_start_x, now_end_x);
+
+//      uint32_t duration = lv_anim_speed_to_time(50, now_start_x, now_end_x); // 计算时间
+//     lv_anim_set_time(&now_app, duration);
+//     lv_anim_set_path(&now_app, &path); // Default is linear
+
+//     lv_anim_t pre_app;
+//     lv_anim_init(&pre_app);
+//     lv_anim_set_exec_cb(&pre_app, (lv_anim_exec_xcb_t)lv_obj_set_x);
+//     lv_anim_set_var(&pre_app, pre_app_image);
+//     lv_anim_set_values(&pre_app, old_start_x, old_end_x);
+
+//     duration = lv_anim_speed_to_time(50, old_start_x, old_end_x); // 计算时间
+//     lv_anim_set_time(&pre_app, duration);
+//     lv_anim_set_path(&pre_app, &path); // Default is linear
+//     lv_anim_start(&pre_app);
+//     lv_anim_start(&now_app);
+//     // lv_obj_del(pre_app_image); 
+
+// }
+//  void loop()
+// {
+// lv_task_handler();
+//      //lv_task_handler(); /* let the GUI do its work */
+//      //lv_task_create(lflf,200,LV_TASK_PRIO_MID,NULL);
+    
+//      delay(5);
+//  }
+
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include <Adafruit_MPU6050.h>
+#include <Wire.h>
+#include <SPI.h> //导入库
+#include <TFT_eSPI.h>     
+
+enum ACTIVE_TYPE
+{
+    TURN_RIGHT = 0,
+    TURN_LEFT,
+    RETURN,
+    GO_FORWORD,
+    UNKNOWN
+};
+
+struct Imu_Action
+{
+    boolean isValid;
+    ACTIVE_TYPE active;
+    boolean long_time;
+    int16_t ax;
+    int16_t ay;
+    int16_t az;
+    int16_t gx;
+    int16_t gy;
+    int16_t gz;
+};
+
+TFT_eSPI tft = TFT_eSPI(130,130); 
+Adafruit_MPU6050 mpu;
+float rad_x=0;
+long last_update_time;
+sensors_event_t a, g, temp;
+Imu_Action action_info;
+void App_meno();
+void mpu6050_app(void * parameter);
+void mpuint()
+{
+    Serial.begin(115200);
+  while (!Serial)
+    delay(10); // will pause Zero, Leonardo, etc until serial console opens
+
+  Serial.println("Adafruit MPU6050 test!");
+
+  // Try to initialize!
+  if (!mpu.begin()) {//Adafruit_I2CDevice.cpp 30行 sda scl
+    Serial.println("Failed to find MPU6050 chip");
+    while (1) {
+      delay(10);
+    }
+  }
+  Serial.println("MPU6050 Found!");
+
+  mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+  Serial.print("Accelerometer range set to: ");
+  switch (mpu.getAccelerometerRange()) {
+  case MPU6050_RANGE_2_G:
+    Serial.println("+-2G");
+    break;
+  case MPU6050_RANGE_4_G:
+    Serial.println("+-4G");
+    break;
+  case MPU6050_RANGE_8_G:
+    Serial.println("+-8G");
+    break;
+  case MPU6050_RANGE_16_G:
+    Serial.println("+-16G");
+    break;
+  }
+  mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+  Serial.print("Gyro range set to: ");
+  switch (mpu.getGyroRange()) {
+  case MPU6050_RANGE_250_DEG:
+    Serial.println("+- 250 deg/s");
+    break;
+  case MPU6050_RANGE_500_DEG:
+    Serial.println("+- 500 deg/s");
+    break;
+  case MPU6050_RANGE_1000_DEG:
+    Serial.println("+- 1000 deg/s");
+    break;
+  case MPU6050_RANGE_2000_DEG:
+    Serial.println("+- 2000 deg/s");
+    break;
+  }
+
+  mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
+  Serial.print("Filter bandwidth set to: ");
+  switch (mpu.getFilterBandwidth()) {
+  case MPU6050_BAND_260_HZ:
+    Serial.println("260 Hz");
+    break;
+  case MPU6050_BAND_184_HZ:
+    Serial.println("184 Hz");
+    break;
+  case MPU6050_BAND_94_HZ:
+    Serial.println("94 Hz");
+    break;
+  case MPU6050_BAND_44_HZ:
+    Serial.println("44 Hz");
+    break;
+  case MPU6050_BAND_21_HZ:
+    Serial.println("21 Hz");
+    break;
+  case MPU6050_BAND_10_HZ:
+    Serial.println("10 Hz");
+    break;
+  case MPU6050_BAND_5_HZ:
+    Serial.println("5 Hz");
+    break;
+  }
+
+  Serial.println("");
+  delay(100);
+}
+
+void setup()
+{
+  tft.init();    //初始化
+  tft.fillScreen(TFT_WHITE);//屏幕颜色
+  // 设置起始坐标(10, 10)，2 号字体
+  //tft.setCursor(10, 10, 1);
+  // 设置文本颜色为白色
+  tft.setTextColor(TFT_BLACK);
+  // 设置文字的大小TFT_WHITE
+  tft.setTextSize(1);
+  //action_info.active = UNKNOWN;
+  mpuint();
+ // App_meno();
+  last_update_time=millis();
+}
+void mpu6050_app(void * parameter)
+{
+  sensors_event_t a, g, temp;
+  while(1)
+  {
+    tft.setCursor(10, 10, 1);
+    mpu.getEvent(&a, &g, &temp);
+    tft.fillScreen(TFT_BLACK);//屏幕颜色TFT_BLACK
+    tft.setTextColor(TFT_WHITE);
+    tft.println("Acceleration");
+    tft.setCursor(10, 20, 1);
+    tft.print("X: ");
+    rad_x=a.acceleration.x;
+    tft.println((String)(a.acceleration.x)+" m/s^2");
+    tft.setCursor(10, 30, 1);
+    tft.print("Y: ");
+    tft.println((String)(a.acceleration.y)+" m/s^2");
+    tft.setCursor(10, 40, 1);
+    tft.print("Z: ");
+    tft.println((String)(a.acceleration.z)+" m/s^2");
+    tft.setCursor(10, 50, 1);
+    tft.print("Rotation ");
+    tft.setCursor(10, 60, 1);
+    tft.print("X: ");
+    tft.print((String)(g.gyro.x)+" rad/s");
+
+    tft.setCursor(10, 70, 1);
+    tft.print("Y: ");
+    tft.print((String)(g.gyro.y)+" rad/s");
+
+    tft.setCursor(10,80, 1);
+    tft.print("Z: ");
+    tft.print((String)(g.gyro.z)+" rad/s");
+    tft.setCursor(10,90, 1);
+    tft.print("Temperature: ");
+    tft.setCursor(10,100, 1);
+    tft.print((String)temp.temperature+(" degC"));
+    //Serial.printf("sdfdgdfg\n");
+   vTaskDelay(1000 / portTICK_PERIOD_MS);
+  }
+}
+void round(void * parameter)
+{
+  while(1)
+  {
+    if(rad_x<0)
+    {
+      Serial.printf("round\n");
+    }
+  }
+
+}
+void App_meno()
+{
+  
+  xTaskCreatePinnedToCore(
+              mpu6050_app,          /*任务函数*/
+              "Mpu6050_app",        /*带任务名称的字符串*/
+              20000,            /*堆栈大小，单位为字节*/
+              NULL,             /*作为任务输入传递的参数*/
+              2,                /*任务的优先级*/
+              NULL,
+              tskNO_AFFINITY);  
+
+}
+
+
+Imu_Action * round(int interval)
+{
+  mpu.getEvent(&a, &g, &temp);
+  if(millis()-last_update_time>interval)
+  {
+
+      if(a.acceleration.y>4&&!action_info.isValid)
+      {
+              action_info.isValid = 1;
+              action_info.active = TURN_LEFT;
+      }
+      else if (a.acceleration.y < -4)
+      {
+          //encoder_diff++;
+          action_info.isValid = 1;
+          action_info.active = TURN_RIGHT;
+      }
+      else
+      {
+          action_info.isValid = 0;
+      }
+    
+
+        if (a.acceleration.x  > 5 && !action_info.isValid)
+      {
+          delay(300);
+          mpu.getEvent(&a, &g, &temp);
+          if (a.acceleration.x  > 5)
+          {
+              action_info.isValid = 1;
+              action_info.active = GO_FORWORD;
+          }
+      }
+      else if (a.acceleration.x < -5 && !action_info.isValid)
+      {
+          delay(300);
+          mpu.getEvent(&a, &g, &temp);
+          if (a.acceleration.x < -5)
+          {
+              action_info.isValid = 1;
+              action_info.active = RETURN;
+          }
+      }
+        else
+      {
+          action_info.isValid = 0;
+      }
+      Serial.printf("%s %s %s \n",(String)a.acceleration.x,(String)a.acceleration.y,(String)action_info.active);
+
+      last_update_time = millis();
+  }
+ return &action_info;
+}
+
+
+void loop()
+{
+ // mpu6050_app(NULL);
+ //while(1);
+}
+
+
+
+// #include "Arduino.h"
+// #include "imu.h"
+// Imu_Action *act_info;  
+// IMU imu;
+// void setup()
+// {
+//    Serial.begin(115200);
+//    imu.init();
+   
+// }
+// void loop()
+// {
+// act_info = imu.update(200);
+// Serial.printf("%d %d %d %d %d %d %d   \n",act_info->active,act_info->ax,act_info->ay,act_info->az,act_info->gx,act_info->gy,act_info->gz);
+// Serial.printf("fdghfgh\n");
+// }

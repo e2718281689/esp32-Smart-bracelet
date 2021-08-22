@@ -1,0 +1,312 @@
+/*
+// Basic demo for accelerometer readings from Adafruit MPU6050
+#include <Adafruit_MPU6050.h>
+//#include <Adafruit_Sensor.h>
+#include <Wire.h>
+Adafruit_MPU6050 mpu;
+
+void setup(void) {
+  Serial.begin(115200);
+  while (!Serial)
+    delay(10); // will pause Zero, Leonardo, etc until serial console opens
+
+  Serial.println("Adafruit MPU6050 test!");
+
+  // Try to initialize!
+  if (!mpu.begin()) {//Adafruit_I2CDevice.cpp 30行 sda scl
+    Serial.println("Failed to find MPU6050 chip");
+    while (1) {
+      delay(10);
+    }
+  }
+  Serial.println("MPU6050 Found!");
+
+  mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+  Serial.print("Accelerometer range set to: ");
+  switch (mpu.getAccelerometerRange()) {
+  case MPU6050_RANGE_2_G:
+    Serial.println("+-2G");
+    break;
+  case MPU6050_RANGE_4_G:
+    Serial.println("+-4G");
+    break;
+  case MPU6050_RANGE_8_G:
+    Serial.println("+-8G");
+    break;
+  case MPU6050_RANGE_16_G:
+    Serial.println("+-16G");
+    break;
+  }
+  mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+  Serial.print("Gyro range set to: ");
+  switch (mpu.getGyroRange()) {
+  case MPU6050_RANGE_250_DEG:
+    Serial.println("+- 250 deg/s");
+    break;
+  case MPU6050_RANGE_500_DEG:
+    Serial.println("+- 500 deg/s");
+    break;
+  case MPU6050_RANGE_1000_DEG:
+    Serial.println("+- 1000 deg/s");
+    break;
+  case MPU6050_RANGE_2000_DEG:
+    Serial.println("+- 2000 deg/s");
+    break;
+  }
+
+  mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
+  Serial.print("Filter bandwidth set to: ");
+  switch (mpu.getFilterBandwidth()) {
+  case MPU6050_BAND_260_HZ:
+    Serial.println("260 Hz");
+    break;
+  case MPU6050_BAND_184_HZ:
+    Serial.println("184 Hz");
+    break;
+  case MPU6050_BAND_94_HZ:
+    Serial.println("94 Hz");
+    break;
+  case MPU6050_BAND_44_HZ:
+    Serial.println("44 Hz");
+    break;
+  case MPU6050_BAND_21_HZ:
+    Serial.println("21 Hz");
+    break;
+  case MPU6050_BAND_10_HZ:
+    Serial.println("10 Hz");
+    break;
+  case MPU6050_BAND_5_HZ:
+    Serial.println("5 Hz");
+    break;
+  }
+
+  Serial.println("");
+  delay(100);
+}
+
+void loop() {
+
+  // Get new sensor events with the readings 
+  sensors_event_t a, g, temp;
+  mpu.getEvent(&a, &g, &temp);
+
+  //Print out the values 
+  Serial.print("Acceleration X: ");
+  Serial.print(a.acceleration.x);
+  Serial.print(", Y: ");
+  Serial.print(a.acceleration.y);
+  Serial.print(", Z: ");
+  Serial.print(a.acceleration.z);
+  Serial.println(" m/s^2");
+
+  Serial.print("Rotation X: ");
+  Serial.print(g.gyro.x);
+  Serial.print(", Y: ");
+  Serial.print(g.gyro.y);
+  Serial.print(", Z: ");
+  Serial.print(g.gyro.z);
+  Serial.println(" rad/s");
+
+  Serial.print("Temperature: ");
+  Serial.print(temp.temperature);
+  Serial.println(" degC");
+
+  Serial.println("");
+  delay(500);
+}
+*/
+
+#include <Wire.h> //Lib for IIC communication
+#include <MPU6050.h> //Lib for MPU6050
+//#include <SoftwareSerial.h>// import the serial library
+
+//SoftwareSerial BT(10, 11);  // RX, TX
+
+MPU6050 mpu;
+
+unsigned long timer = 0;
+
+unsigned long timer2 = 0;
+
+float timeStep = 0.01;
+float pitch = 0;
+float roll = 0;
+float yaw = 0;
+float temp = 0;
+
+void setup()
+{
+  Serial.begin(115200);
+
+
+  // Initialize MPU6050
+  while (!mpu.begin(MPU6050_SCALE_2000DPS, MPU6050_RANGE_2G))
+  {
+    Serial.println("Could not find a valid MPU6050 sensor, check wiring!");
+    delay(500);
+  }
+
+  mpu.calibrateGyro();   // Calibrate gyroscope during start启动时校准陀螺仪
+
+  mpu.setThreshold(3); //Controls the sensitivty 控制灵敏度
+}
+
+void loop()
+{
+  timer = millis();
+
+  //Read Gyro and Temperature sensor values读取陀螺仪和温度传感器的值
+  Vector norm = mpu.readNormalizeGyro();
+  temp = mpu.readTemperature();
+
+  // Calculate Pitch, Roll and Yaw
+  pitch = pitch + norm.YAxis * timeStep;
+  roll = roll + norm.XAxis * timeStep;
+  yaw = yaw + norm.ZAxis * timeStep;
+
+  // Print values
+  Serial.print(" Pitch = ");
+  Serial.print(pitch);
+  Serial.print(" Roll = ");
+  Serial.print(roll);
+  Serial.print(" Yaw = ");
+  Serial.print(yaw);
+  Serial.print(" Temp = ");
+  Serial.print(temp);
+  Serial.println(" *C");
+
+  delay((timeStep * 1000) - (millis() - timer)); //makes sure we read only at a an interval of 0.01 secounds确保我们仅以0.01秒的间隔读取
+
+
+}
+
+void send_BT()
+{
+  int t;
+  int x;
+  int y;
+
+  if (roll > -100 && roll < 100)
+    x = map (roll, -100, 100, 0, 100);
+
+  if (pitch > -100 && pitch < 100)
+    y = map (pitch, -100, 100, 100, 200);
+
+  if (temp > 0 && temp < 50)
+    t = 200 + int(temp);
+
+
+  timer2 = millis();
+}
+
+// /*
+// #include <lvgl.h>
+// #include <TFT_eSPI.h>
+
+// TFT_eSPI tft = TFT_eSPI(130,130);
+// static lv_disp_buf_t disp_buf;
+// static lv_color_t buf[LV_HOR_RES_MAX * 10];
+
+// #if USE_LV_LOG != 0
+// /* Serial debugging */
+// void my_print(lv_log_level_t level, const char * file, uint32_t line, const char * dsc)
+// {
+
+//     Serial.printf("%s@%d->%s\r\n", file, line, dsc);
+//     Serial.flush();
+// }
+// #endif
+
+// /* Display flushing */
+// void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p)
+// {
+//     uint32_t w = (area->x2 - area->x1 + 1);
+//     uint32_t h = (area->y2 - area->y1 + 1);
+
+//     tft.startWrite();
+//     tft.setAddrWindow(area->x1, area->y1, w, h);
+//     tft.pushColors(&color_p->full, w * h, true);
+//     tft.endWrite();
+
+//     lv_disp_flush_ready(disp);
+// }
+
+// /* Reading input device (simulated encoder here) */
+// bool read_encoder(lv_indev_drv_t * indev, lv_indev_data_t * data)
+// {
+//     static int32_t last_diff = 0;
+//     int32_t diff = 0; /* Dummy - no movement */
+//     int btn_state = LV_INDEV_STATE_REL; /* Dummy - no press */
+
+//     data->enc_diff = diff - last_diff;;
+//     data->state = btn_state;
+
+//     last_diff = diff;
+
+//     return false;
+// }
+
+// void setup()
+// {
+
+//     Serial.begin(115200); /* prepare for possible serial debug */
+
+//     lv_init();
+
+// #if USE_LV_LOG != 0
+//     lv_log_register_print_cb(my_print); /* register print function for debugging */
+// #endif
+
+//     tft.begin(); /* TFT init */
+//     tft.setRotation(1); /* Landscape orientation */
+
+//     lv_disp_buf_init(&disp_buf, buf, NULL, LV_HOR_RES_MAX * 10);
+
+//     /*Initialize the display*/
+//     lv_disp_drv_t disp_drv;
+//     lv_disp_drv_init(&disp_drv);
+//     disp_drv.hor_res = 130;
+//     disp_drv.ver_res = 130;
+//     disp_drv.flush_cb = my_disp_flush;
+//     disp_drv.buffer = &disp_buf;
+//     lv_disp_drv_register(&disp_drv);
+
+//     /*Initialize the (dummy) input device driver*/
+//     lv_indev_drv_t indev_drv;
+//     lv_indev_drv_init(&indev_drv);
+//     indev_drv.type = LV_INDEV_TYPE_ENCODER;
+//     indev_drv.read_cb = read_encoder;
+//     lv_indev_drv_register(&indev_drv);
+
+//     /* Create simple label */
+//     lv_obj_t *label = lv_label_create(lv_scr_act(), NULL);
+//     lv_label_set_text(label, "Hello Arduino! (V7.0.X)");
+//     lv_obj_align(label, NULL, LV_ALIGN_CENTER, 0, 0);
+// }
+
+
+//  void loop()
+// {
+
+//      lv_task_handler(); /* let the GUI do its work */
+//      delay(5);
+//  }
+//  */
+/*
+#include "Arduino.h"
+#include "bianmq.h"
+
+bianmq bian=bianmq(21,22,23);
+void setup()
+{
+  Serial.begin(9600);
+  bian.init();
+}
+
+void loop()
+{
+ Serial.printf("%d ",bian.bianmq_state());
+  delay(100);
+  Serial.println("65465465");
+}
+*/

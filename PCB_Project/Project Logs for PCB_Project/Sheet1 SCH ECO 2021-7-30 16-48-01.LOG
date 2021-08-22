@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=K3 Old Footprint=ButtonTACT_3.5*3.55_90 New Footprint=SW-SMD_4P-L4.2-W3.3-P2.15-LS5.1 - duplicate
+Change Component Footprint: Designator=K5 Old Footprint=ButtonTACT_3.5*3.55_90 New Footprint=SW-SMD_4P-L4.2-W3.3-P2.15-LS5.1 - duplicate
+Change Net Color : Net Name= GND Old Net Color=Default New Net Color=RGB(255, 255, 232)

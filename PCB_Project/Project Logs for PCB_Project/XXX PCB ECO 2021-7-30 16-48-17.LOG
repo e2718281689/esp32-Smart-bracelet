@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GPIO4 Pin=K4-2
+Removed Pin From Net: NetName=GPIO4 Pin=K4-4
+Added Pin To Net: NetName=GPIO32 Pin=K4-2
+Added Pin To Net: NetName=GPIO32 Pin=K4-4
+Added Room: Name=Sheet1

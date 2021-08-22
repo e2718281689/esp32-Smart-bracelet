@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GPIO24 Pin=R15-2
+Added Component: Designator=R15(R0402_L)
+Added Pin To Net: NetName=GPIO24 Pin=R15-1
+Added Pin To Net: NetName=NetR15_2 Pin=R15-2
+Added Pin To Net: NetName=NetR15_2 Pin=T1-4
+Added Net: Name=NetR15_2

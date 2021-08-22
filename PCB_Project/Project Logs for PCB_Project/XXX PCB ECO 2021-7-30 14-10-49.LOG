@@ -1,0 +1,3 @@
+Added Component: Designator=R15(R0402_L)
+Added Pin To Net: NetName=GPIO10 Pin=R15-2
+Added Member To Class: ClassName=Sheet1 Member=Component R15 10R

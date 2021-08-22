@@ -1,0 +1,5 @@
+Remove Pin=R15-1 From Net=GPIO24
+Remove Pin=T1-4 From Net=GPIO24
+Remove Pin=T1-6 From Net=GPIO33
+Remove Pin=T1-7 From Net=GPIO32
+Add Pin To Net: Pin=T1-6 Old Net=GPIO33 New Net=GPIO23
